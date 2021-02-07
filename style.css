@@ -1,0 +1,51 @@
+.body{
+   
+    background-color:  #E5E5E5;
+}
+a{
+    color:black;
+}
+.row{
+    width: 100%;
+}
+nav{
+    background-color: transparent;
+    margin: 3rem 0;
+}
+
+.nav-item{
+    padding: 0 1.5rem;
+}
+#basic-addon2{
+    background-color:#F06C4E;
+}
+
+
+.foodClass{
+    background-color: #F8F7F5;
+    /* border: 1px solid black*/ 
+    /* width: 220px; */
+    border-radius: 20px;
+    box-shadow:2px 2px 5px gray;
+    padding: 10px;
+    text-align: center;
+    margin: 30px;
+    
+}
+.foodShow{
+     margin: 2.5rem auto;
+    overflow: hidden;
+    display: block;
+}
+.showImg{
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+#foodShowList li{
+    font-weight: 250;
+    padding-left: 0;
+}

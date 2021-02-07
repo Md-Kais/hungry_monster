@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hungry Monster</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand w-100" href="index.html">Hungry Monster</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recipies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form id="search">
+                    <div class="row">
+                        <div class="col-md-12 d-flex" style="  margin-top: 100px; margin-bottom: 50px;">
+                            <input id="inputLetter" type="text" class="w-75 form-control"
+                                aria-describedby="basic-addon2"
+                                placeholder="Search meal by first letter of food name or Food name">
+                            <input type="button" class="w-25" id="basic-addon2" onclick="namePart()" value="Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="input-group mb-3" id="inputSection">
+        <input type="text" class="form-control" id="inputLetter"
+            placeholder="Search meal by first letter of food name or Food name" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2" onclick="namePart()">&nbsp; &nbsp;&nbsp; &nbsp; Search &nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+    </div> -->
+    <!-- ingridients -->
+    <!-- <div class="card">
+        <div class="card-body" >
+            <div class="food-show col-sm-8 col-md-6 col-lg-5" >
+
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 text-center" id="foodName">
+
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="w-100">
+            <div class="foodShow col-sm-8 col-md-6 col-lg-5" id="ingredients">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 text-center" id="foodName"></div>
+ 
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
