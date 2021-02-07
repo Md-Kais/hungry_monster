@@ -28,10 +28,7 @@ function namePart() {
         else {
             //console.log(data.meals[0]);
             //console.log(data.meals);
-
-            //orderedList=null;
-
-            //meals is a global variable
+            //meals provides data meal
             const meals = data.meals;
             const foodDiv = document.getElementById('foodName');
 
@@ -39,10 +36,6 @@ function namePart() {
                 const foodNameDiv = document.createElement('div');
                 foodNameDiv.className = 'foodClass';
                 foodNameDiv.className = 'col ';
-
-
-                // foodNameDiv.
-
                 foodNameDiv.className = 'foodClass';
                 const foodInfo = `
                     <img style="width:100%;border-radius:10px 10px 0px 0px;" src=${meals.strMealThumb}>
@@ -50,15 +43,15 @@ function namePart() {
                 `;
                 foodNameDiv.innerHTML = foodInfo;
                 foodDiv.appendChild(foodNameDiv);
+                //click and show ingredients
                 foodNameDiv.addEventListener('click', () => {
                     const ingredients = document.getElementById('ingredients');
                     const ingDiv = document.createElement('div');
-
-                    ingDiv.className = 'ingClass';
+                    //ingDiv.className = 'ingClass';
                     ingDiv.className = 'col ';
                     ingDiv.innerHTML = `
                     <div class="showImg">
-                    <img id="showImage' style="width:100%;border-radius:10px 10px 0px 0px;" src=${meals.strMealThumb}>
+                    <img id="showImage" style="width:100%;border-radius:10px 10px 0px 0px;" src=${meals.strMealThumb}>
                     </div>
                     <div class="ShowName">
                     <h3>${meals.strMeal}</h3>
@@ -67,7 +60,7 @@ function namePart() {
             <ol id="foodShowList">
             </ol>
             `;
-                    //console.log(ingDiv.childNodes());
+                    
                     ingredients.appendChild(ingDiv);
 
 
@@ -75,14 +68,13 @@ function namePart() {
 
                     foodList.innerHTML = '';
                     for (let i = 1; ; i++) {
-
+                        //make string name
                         let string = String('strIngredient' + String(i));
                         let stringMeasure = String('strMeasure' + String(i));
 
 
                         const ingListItem = meals[string];
                         //console.log(meals[string]);
-
 
                         if (ingListItem.length != "" && ingListItem != 'null') {
 
@@ -92,16 +84,11 @@ function namePart() {
                         }
                         else {
                             foodList.innerHTML = foodList.innerHTML + `<input style="background-color: green; margin:5px;" type="button" value="Reload Page" onClick="window.location.reload(true)">`;
+                            // reload option for make user's see more reliable.
                             break;
                         }
 
                     }
-
-
-
-
-                    //ingredients.
-                    //const ingradient=meals.
                 });
             }
             )
