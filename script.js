@@ -4,6 +4,8 @@ function namePart() {
     let inputLetter = document.getElementById('inputLetter').value;
     //if length 1 , we search it by first letter or we search it by name of food.
     let link = 'https://www.themealdb.com/api/json/v1/1/search.php?';
+    document.getElementById('ingredients').innerHTML=``;
+   
     if (inputLetter.length === 1) {
         link += 'f=';
         link += inputLetter;
@@ -45,6 +47,8 @@ function namePart() {
                 foodDiv.appendChild(foodNameDiv);
                 //click and show ingredients
                 foodNameDiv.addEventListener('click', () => {
+                    //previous card discard;
+                    document.getElementById('ingredients').innerHTML = ``;
                     const ingredients = document.getElementById('ingredients');
                     const ingDiv = document.createElement('div');
                     //ingDiv.className = 'ingClass';
