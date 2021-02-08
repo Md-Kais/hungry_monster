@@ -4,6 +4,7 @@ function namePart() {
     let inputLetter = document.getElementById('inputLetter').value;
     //if length 1 , we search it by first letter or we search it by name of food.
     let link = 'https://www.themealdb.com/api/json/v1/1/search.php?';
+    //previous foodItems and Ingredients Item will be cleared.
     document.getElementById('ingredients').innerHTML=``;
     document.getElementById('foodName').innerHTML = ``;
    
